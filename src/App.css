@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar{
+  background-color: #5c5b5b;
+  overflow: hidden;
+}
+.navbar a{
+  float: left;
+  align-items: center;
+  padding: 17px;
+  text-decoration: none;
+  color: azure;
+
+}
+.right-nav{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn{
+  border-radius: 20px;
+  padding: 7px;
+  background-color: #36ae52;
+  width: 80px;
+  color: white;
+}
+.btn:hover{
+  background-color: #186e2c;
+}
+.logoo{
+  font-size: larger;
+  padding: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 8px 6px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  margin: 5px;
+  width: 22%;
+  height: fit-content;
+  /* float: left; */
+  cursor: pointer;
+  /* padding: 12px; */
+}
+.card:hover {
+  transition: 0.3s; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardinfo{
+  padding: 3px 16px;
+  height: 175px;
+}
+.newsitems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.readmorebtn button{
+  /* display: flex;
+  justify-content: center; */
+  background-color: #0f9bff;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.readmorebtn button:hover{
+  cursor: pointer;
+  background-color: #187cbf;
+}
+.readmorebtn{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.footbtns{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-right: 55px;
+  padding: 15px;
+  /* margin: 15px; */
+}
+.date{
+  display: flex;
+  justify-content: flex-start;
+  font-size: smaller;
+  align-self: center;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  color: gray;
+}
+.lastline{
+  width: -webkit-fill-available; 
+}
