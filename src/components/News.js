@@ -15,7 +15,6 @@ export class News extends Component {
 
   constructor(props) {
     super(props);
-    console.log("this is constructor");
     this.state = {
       articles: [],
       page: 1,
@@ -30,7 +29,6 @@ export class News extends Component {
     this.setState({ loading: true });
     let data = await fetch(newsUrl);
     let content = await data.json();
-    console.log(this.props.category);
     this.setState({
       articles: content.articles,
       totalResults: content.totalResults,
@@ -58,7 +56,6 @@ export class News extends Component {
   };
 
   render() {
-    console.log(this.state.ab);
     return (
       <>
         {this.state.loading && (
